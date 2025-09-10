@@ -620,7 +620,7 @@
                   console.log('Initializing VAPI voice...');
                   vapiInstance = window.vapiSDK.run({
                     apiKey: 'b3f38fb7-8541-4e3e-8708-5d49c3f54f00',
-                    assistant: 'b9e7f7e2-72cf-443f-bcb1-78fa96b97f92'
+                    assistant: 'a2c93253-667b-43bc-a81f-2d2ae33eb023'
                   });
 
                   // Set up voice event listeners
@@ -778,7 +778,7 @@
                 elements.voiceButton.className = 'connecting';
                 elements.voiceButton.textContent = 'Connecting...';
                 elements.voiceStatus.textContent = 'Starting voice call...';
-                vapiInstance.start('b9e7f7e2-72cf-443f-bcb1-78fa96b97f92');
+                vapiInstance.start('a2c93253-667b-43bc-a81f-2d2ae33eb023');
               } catch (error) {
                 console.error('Failed to start voice call:', error);
                 addVoiceMessage('system', 'Failed to start voice call: ' + error.message);
@@ -827,7 +827,7 @@
                     'Authorization': 'Bearer bb0b198b-1a8f-4675-bdf8-8a865fc5d68a'
                   },
                   body: JSON.stringify({
-                    assistantId: 'b9e7f7e2-72cf-443f-bcb1-78fa96b97f92',
+                    assistantId: 'a2c93253-667b-43bc-a81f-2d2ae33eb023',
                     input: message,
                     previousChatId: previousChatId
                   })
